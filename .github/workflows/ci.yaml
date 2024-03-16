@@ -1,7 +1,7 @@
 name: Terraform Modules CI
 
 on:
-  push:
+  pull_request:
 
 jobs:
   validate:
@@ -11,3 +11,9 @@ jobs:
     permissions:
       security-events: write
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-checkov.yaml@main
+
+  docs:
+    permissions:
+      contents: write
+    needs: [validate, checkov]
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-docs.yaml@main

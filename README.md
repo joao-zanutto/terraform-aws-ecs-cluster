@@ -1,3 +1,5 @@
+# AWS ECS Cluster Module - EC2 Backed
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 

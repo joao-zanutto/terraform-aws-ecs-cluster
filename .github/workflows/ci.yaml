@@ -3,9 +3,6 @@ name: Terraform Modules CI
 on:
   pull_request:
 
-permissions:
-  security-events: write
-
 jobs:
   validate:
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-validate.yaml@main
@@ -17,4 +14,4 @@ jobs:
 
   docs:
     needs: [validate, checkov]
-    uses: joao-zanutto/shared-workflows/.github/workflows/tf-checkov.yaml@main
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-docs.yaml@main

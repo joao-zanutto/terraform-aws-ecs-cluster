@@ -7,6 +7,14 @@ jobs:
   validate:
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-validate.yaml@main
 
+  lint:
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-lint.yaml@main
+
+  fmt:
+    permissions:
+      contents: write
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-lint.yaml@main
+
   checkov:
     permissions:
       security-events: write
@@ -15,5 +23,5 @@ jobs:
   docs:
     permissions:
       contents: write
-    needs: [validate, checkov]
+    needs: [validate, fmt, checkov, lint]
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-docs.yaml@main

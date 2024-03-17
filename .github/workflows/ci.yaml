@@ -13,7 +13,7 @@ jobs:
   fmt:
     permissions:
       contents: write
-    uses: joao-zanutto/shared-workflows/.github/workflows/tf-lint.yaml@main
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-fmt.yaml@main
 
   checkov:
     permissions:

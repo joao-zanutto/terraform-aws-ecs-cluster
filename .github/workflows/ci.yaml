@@ -5,6 +5,7 @@ on:
 
 jobs:
   validate:
+    name: Validate
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-validate.yaml@main
 
   lint:

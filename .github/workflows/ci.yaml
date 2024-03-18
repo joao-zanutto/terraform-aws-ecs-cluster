@@ -29,3 +29,4 @@ jobs:
       contents: write
     needs: [lint, checkov]
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-docs.yaml@main
+    

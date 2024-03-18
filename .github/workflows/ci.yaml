@@ -12,7 +12,6 @@ jobs:
     needs: [validate]
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-lint.yaml@main
 
-
   checkov:
     permissions:
       security-events: write

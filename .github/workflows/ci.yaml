@@ -1,8 +1,11 @@
 name: Terraform Modules CI
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
-
+  
 jobs:
   validate:
     name: Validate
@@ -29,4 +32,3 @@ jobs:
       contents: write
     needs: [lint, checkov]
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-docs.yaml@main
-    

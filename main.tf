@@ -1,5 +1,11 @@
 resource "aws_ecs_cluster" "main" {
   name = "${local.identifier}-cluster"
+
+  setting {
+    name  = "containerInsights"
+    value = "enabled"
+  }
+
 }
 
 resource "aws_ecs_capacity_provider" "main" {

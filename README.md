@@ -1,5 +1,19 @@
 # AWS ECS Cluster Module - EC2 Backed
 
+## Example
+
+```tf
+module "cluster" {
+    source = "git@github.com:joao-zanutto/terraform-aws-ecs-cluster.git"
+
+    env = "dev"
+    name = "ecs-cluster"
+
+    vpc_id = var.vpc_id
+    subnet_ids = var.subnet_ids
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 

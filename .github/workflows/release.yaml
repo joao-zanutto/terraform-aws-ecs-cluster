@@ -1,0 +1,11 @@
+name: Terraform Module Release
+
+on:
+  push:
+    branches:
+        - main
+  
+jobs:
+  validate:
+    name: Release
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-release.yaml@main

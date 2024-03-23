@@ -2,6 +2,9 @@ name: Terraform Modules CI
 
 on:
   pull_request:
+    paths:
+      - "**.tf"
+      - "**.hcl"
   
 jobs:
   validate:

@@ -6,6 +6,9 @@ on:
         - main
   
 jobs:
-  validate:
+  release:
+    permissions:
+        contents: write
+        pull-requests: write
     name: Release
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-release.yaml@main

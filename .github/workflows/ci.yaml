@@ -13,5 +13,4 @@ permissions:
 
 jobs:
   ci-workflow:
-    name: Validate
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-ci.yaml@main

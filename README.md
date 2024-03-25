@@ -9,7 +9,7 @@ module "cluster" {
     source = "git@github.com:joao-zanutto/terraform-aws-ecs-cluster.git"
 
     env = "dev"
-    name = "ecs-cluster"
+    name = "demo"
 
     vpc_id = var.vpc_id              # leave empty to use the default VPC
     subnet_ids = var.subnet_ids      # leave empty to use all VPC subnets

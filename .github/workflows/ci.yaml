@@ -12,6 +12,7 @@ on:
 permissions:
   security-events: write
   contents: write
+  pull-requests: write
 
 jobs:
   ci-workflow:

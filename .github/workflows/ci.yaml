@@ -2,8 +2,8 @@ name: Terraform Modules CI
 
 on:
   pull_request:
-    branches:
-      - main
+    branches: [main]
+    types: [opened, reopened, synchronize, closed]
     paths:
       - "**.tf"
       - ".tflint.hcl"

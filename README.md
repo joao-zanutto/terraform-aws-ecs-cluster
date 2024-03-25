@@ -59,7 +59,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_env"></a> [env](#input\_env) | Environment where the cluster will be deployed | `string` | `"dev"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the cluster | `string` | `"demo"` | no |
-| <a name="input_node_instance_type"></a> [node\_instance\_type](#input\_node\_instance\_type) | Instance type used to start nodes in the cluster - default is t3.micro | `string` | `"t3.micro"` | no |
+| <a name="input_node_instance_type"></a> [node\_instance\_type](#input\_node\_instance\_type) | Instance type used to start nodes in the cluster | `string` | `"t3.micro"` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | Subnet IDs where the cluster nodes will be deployed - if left empty, will deploy in all subnets in the VPC | `list(string)` | `[]` | no |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC ID where the cluster nodes will be deployed - leave empty to deploy in the default VPC | `string` | `""` | no |
 

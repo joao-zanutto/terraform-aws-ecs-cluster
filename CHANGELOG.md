@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/compare/v0.1.1...v0.1.2) (2024-03-25)
+
+
+### Bug Fixes
+
+* support push events ([#15](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/issues/15)) ([fb6b239](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/commit/fb6b239e9ae1f9e04c08454dc608d1b180f7ec82))
+
 ## [0.1.1](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/compare/v0.1.0...v0.1.1) (2024-03-25)
 
 

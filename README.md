@@ -1,5 +1,7 @@
 # AWS ECS Cluster Module - EC2 Backed
 
+Terraform module that spins up a ECS cluster backed by EC2 instances created by an Auto-Scaling Group.
+
 ## Example
 
 ```tf

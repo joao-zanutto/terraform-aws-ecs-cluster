@@ -25,5 +25,5 @@ variable "subnet_ids" {
 variable "node_instance_type" {
   default     = "t3.micro"
   type        = string
-  description = "Instance type used to start nodes in the cluster - default is t3.micro"
+  description = "Instance type used to start nodes in the cluster"
 }

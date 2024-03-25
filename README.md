@@ -1,6 +1,6 @@
 # AWS ECS Cluster Module - EC2 Backed
 
-Terraform module that spins up a ECS cluster backed by EC2 instances created by an Auto-Scaling Group.
+Terraform module that spins up a ECS cluster backed by EC2 instances created by an Auto-Scaling Group. The default Security Group configuration on this module is ideal to use with the `awsvpc` ECS networking type, if you intend to use the `bridge` networking type, you'll need to open ports on the security group.
 
 ## Example
 

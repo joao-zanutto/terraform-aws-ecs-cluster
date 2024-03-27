@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/compare/v0.1.2...v0.2.0) (2024-03-27)
+
+
+### Features
+
+* add dependabot file ([#17](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/issues/17)) ([4a6ed17](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/commit/4a6ed17334ecd54eb883982ed7518b8b2367c28a))
+
+
+### Bug Fixes
+
+* dependabot failing because of missing package config ([#19](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/issues/19)) ([dc5f25e](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/commit/dc5f25e32c6af1b50f6558760c52bf84c68df024))
+
 ## [0.1.2](https://github.com/joao-zanutto/terraform-aws-ecs-cluster/compare/v0.1.1...v0.1.2) (2024-03-25)
 
 

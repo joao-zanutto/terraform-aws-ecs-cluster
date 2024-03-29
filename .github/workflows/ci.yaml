@@ -2,12 +2,17 @@ name: Terraform Modules CI
 
 on:
   pull_request:
+    branches: [main]
     paths:
       - "**.tf"
       - ".tflint.hcl"
       - "README.md"
   push:
     branches: [main]
+    paths:
+      - "**.tf"
+      - ".tflint.hcl"
+      - "README.md"
   
 permissions:
   security-events: write
